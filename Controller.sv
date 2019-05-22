@@ -4,7 +4,7 @@ module mainController(clk, rst, zero, opcode, memWrite, mem2reg, jump, branch, r
   output reg[2:0] aluOP;
   output reg memWrite, mem2reg, jump, branch, regWrite;
   
-  parameter[3:0] Rtype = 4'b 1000, Load = 4'b0000, Store = 4'b0001, Jump = 4'b0010;
+  parameter[3:0] beq = 4'b 0100, Rtype = 4'b 1000, Load = 4'b0000, Store = 4'b0001, Jump = 4'b0010;
   parameter[2:0] need_add = 0, need_sub = 1, need_and = 2, need_or = 3, need_func = 4;
   
     

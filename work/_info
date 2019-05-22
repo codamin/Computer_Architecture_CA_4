@@ -1,0 +1,50 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\User\Desktop\University\Courses\memari\Projects\Project4
+vforwarding
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 IUo>32_bKOBVV0>hNEjEmA2
+Z3 VIgm:jlKB2f`h7YaHjKD=m1
+S1
+Z4 dC:\Users\User\Documents\GitHub\Computer_Architecture_CA_4
+Z5 w1558497494
+Z6 8C:/Users/User/Documents/GitHub/Computer_Architecture_CA_4/forwarding.sv
+Z7 FC:/Users/User/Documents/GitHub/Computer_Architecture_CA_4/forwarding.sv
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 o-work work -sv -O0
+!i10b 1
+Z10 !s100 EW7DL:JIC9=gC@oMbO>7k0
+Z11 !s105 forwarding_sv_unit
+!s85 0
+Z12 !s108 1558497903.227000
+Z13 !s107 C:/Users/User/Documents/GitHub/Computer_Architecture_CA_4/forwarding.sv|
+Z14 !s90 -reportprogress|300|-work|work|-sv|C:/Users/User/Documents/GitHub/Computer_Architecture_CA_4/forwarding.sv|
+!s101 -O0
+vmainController
+R1
+!i10b 1
+!s100 KW4CQ_HEBYKzVZ64Bbcg[3
+IFi6AhPO`OMISRR31h5DJ@0
+Vc34eSbRISXV[DmLMQ6I6I3
+!s105 Controller_sv_unit
+S1
+R4
+w1558498139
+8C:\Users\User\Documents\GitHub\Computer_Architecture_CA_4\Controller.sv
+FC:\Users\User\Documents\GitHub\Computer_Architecture_CA_4\Controller.sv
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1558498149.793000
+!s107 C:\Users\User\Documents\GitHub\Computer_Architecture_CA_4\Controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|C:\Users\User\Documents\GitHub\Computer_Architecture_CA_4\Controller.sv|
+!s101 -O0
+R9
+nmain@controller
