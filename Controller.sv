@@ -1,36 +1,54 @@
-module mainController(clk, rst, zero, opcode, memWrite, mem2reg, jump, branch, regWrite, aluOP);
-  input clk, rst, zero;
-  input[3:0] opcode;
-  output reg[2:0] aluOP;
-  output reg memWrite, mem2reg, jump, branch, regWrite;
+module ControllerUnit(zero, opcode,aluS, regDstS, aluSrcS, dataMemReadS, PCSrcS, dataMemWriteS, writeRegS, memToRegS);
+  input zero;
+  input[5:0] opcode;
+  output reg[2:0] aluS;
+  output reg writeRegS, memToRegS, dataMemWriteS, dataMemReadS, PCSrcS, aluSrcS, regDstS;
   
-  parameter[3:0] beq = 4'b 0100, Rtype = 4'b 1000, Load = 4'b0000, Store = 4'b0001, Jump = 4'b0010;
-  parameter[2:0] need_add = 0, need_sub = 1, need_and = 2, need_or = 3, need_func = 4;
-  
-    
+  parameter[5:0] NOP = 0, ADD = 1, SUB = 2, AND = 3, OR = 4, SLT = 5, LW = 6, SW = 7, JMP = 8, BEQ = 9, BNE = 10;
+  parameter[2:0] add_ = 0, sub_ = 1, and_ = 2, or_ = 3, lt_ = 4;
+
   always@(opcode, zero) begin
-    {memWrite, mem2reg, jump, branch, regWrite, aluOP} = 9'b 0;
-    
+    {writeRegS, memToRegS, dataMemWriteS, PCSrcS, aluS, aluSrcS, regDstS, dataMemReadS} = 10'b0;
     case(opcode)
-      Load: begin
-        mem2reg = 1'b1;
-        regWrite = 1'b1;
-      end
-      
-      Store: memWrite = 1'b1;
-
-      Jump: jump = 1'b1;
-
-      beq:begin
-        aluOP = need_sub;
-        branch = zero? 1'b1: 1'b0;
-      end
-      
-      Rtype:begin
-        aluOP = need_func;
-        regWrite = 1'b 1;
-      end
-      default: aluOP = 5;
+    // NOP: begin
+    ADD: begin
+      {writeRegS, regDstS} = 2'b11;
+      aluS = add_;
+    end
+    SUB: begin
+      {writeRegS, regDstS} = 2'b11;
+      aluS = sub_;
+    end
+    AND: begin
+      {writeRegS, regDstS} = 2'b11;
+      aluS = and_;
+    end
+    OR: begin
+      {writeRegS, regDstS} = 2'b11;
+      aluS = or_;
+    end
+    SLT: begin
+      {writeRegS, regDstS} = 2'b11;
+      aluS = lt_;
+    end
+    LW: begin
+      {writeRegS, aluSrcS, memToRegS, dataMemReadS} = 4'b1111;
+      aluS = add_;
+    end
+    SW: begin
+      {aluSrcS, dataMemWriteS} = 2'b11;
+      aluS = add_;
+    end
+    // JMP:
+    BEQ: begin
+      aluS = sub_;
+    end
+    BNE: begin
+      aluS = sub_;
+    end
+    default: begin
+      {writeRegS, memToRegS, dataMemWriteS, PCSrcS, aluS, aluSrcS, regDstS} = 9'b0;
+    end
     endcase
   end
-  endmodule
+endmodule
