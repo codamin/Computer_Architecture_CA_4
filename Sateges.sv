@@ -19,20 +19,20 @@ module Stage1(clk, rst, PcPIn, InstIn, PcPOut, InstOut);
    end
 endmodule
 
-module Stage2(clk, rst, sigI, data1, data2, data3, data4, data5, data6, sigO, out1, out2, out3, out4, out5, out6);
+module Stage2(clk, rst, sigI, data1, data2, data3, data4, data5, data6, data7, sigO, out1, out2, out3, out4, out5, out6, out7);
       input clk, rst;
-      input[9:0] sigI;
+      input[8:0] sigI;
       input[15:0] data1;
       input[31:0] data2, data3, data4;
-      input[4:0] data5, data6;
-      output reg[9:0] sigO;
+      input[4:0] data5, data6, data7;
+      output reg[8:0] sigO;
       output reg[15:0] out1;
       output reg[31:0] out2, out3, out4;
-      output reg[4:0] out5, out6;
+      output reg[4:0] out5, out6, out7;
 
       always@(posedge clk, posedge rst) begin
          if(rst) begin
-            sigO <= 10'b0;
+            sigO <= 9'b0;
             out1 <= 16'b0;
             out2 <= 32'b0;
             out3 <= 32'b0;
