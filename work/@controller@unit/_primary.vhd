@@ -25,6 +25,7 @@ entity ControllerUnit is
         aluS            : out    vl_logic_vector(2 downto 0);
         regDstS         : out    vl_logic;
         aluSrcS         : out    vl_logic;
+        dataMemReadS    : out    vl_logic;
         PCSrcS          : out    vl_logic;
         dataMemWriteS   : out    vl_logic;
         writeRegS       : out    vl_logic;

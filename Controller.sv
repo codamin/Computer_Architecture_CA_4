@@ -1,14 +1,14 @@
-module ControllerUnit(zero, opcode,aluS, regDstS, aluSrcS, PCSrcS, dataMemWriteS, writeRegS, memToRegS);
+module ControllerUnit(zero, opcode,aluS, regDstS, aluSrcS, dataMemReadS, PCSrcS, dataMemWriteS, writeRegS, memToRegS);
   input zero;
   input[5:0] opcode;
   output reg[2:0] aluS;
-  output reg writeRegS, memToRegS, dataMemWriteS, PCSrcS, aluSrcS, regDstS;
+  output reg writeRegS, memToRegS, dataMemWriteS, dataMemReadS, PCSrcS, aluSrcS, regDstS;
   
   parameter[5:0] NOP = 0, ADD = 1, SUB = 2, AND = 3, OR = 4, SLT = 5, LW = 6, SW = 7, JMP = 8, BEQ = 9, BNE = 10;
   parameter[2:0] add_ = 0, sub_ = 1, and_ = 2, or_ = 3, lt_ = 4;
 
   always@(opcode, zero) begin
-    {writeRegS, memToRegS, dataMemWriteS, PCSrcS, aluS, aluSrcS, regDstS} = 9'b0;
+    {writeRegS, memToRegS, dataMemWriteS, PCSrcS, aluS, aluSrcS, regDstS, dataMemReadS} = 10'b0;
     case(opcode)
     // NOP: begin
     ADD: begin
@@ -32,7 +32,7 @@ module ControllerUnit(zero, opcode,aluS, regDstS, aluSrcS, PCSrcS, dataMemWriteS
       aluS = lt_;
     end
     LW: begin
-      {writeRegS, aluSrcS, memToRegS} = 3'b11;
+      {writeRegS, aluSrcS, memToRegS, dataMemReadS} = 4'b1111;
       aluS = add_;
     end
     SW: begin

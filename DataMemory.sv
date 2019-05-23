@@ -2,7 +2,7 @@
 
 module DataMemory(clk, rst, writeS, address, dataIn, dataOut);
   input clk, rst, writeS;
-  input[31:0] address;
+  input[15:0] address;
   input[31:0] dataIn;
   output[31:0] dataOut;
   

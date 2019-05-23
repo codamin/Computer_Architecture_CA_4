@@ -21,18 +21,18 @@ endmodule
 
 module Stage2(clk, rst, sigI, data1, data2, data3, data4, data5, data6, sigO, out1, out2, out3, out4, out5, out6);
       input clk, rst;
-      input[8:0] sigI;
+      input[9:0] sigI;
       input[15:0] data1;
       input[31:0] data2, data3, data4;
       input[4:0] data5, data6;
-      output reg[8:0] sigO;
+      output reg[9:0] sigO;
       output reg[15:0] out1;
       output reg[31:0] out2, out3, out4;
       output reg[4:0] out5, out6;
 
       always@(posedge clk, posedge rst) begin
          if(rst) begin
-            sigO <= 9'b0;
+            sigO <= 10'b0;
             out1 <= 16'b0;
             out2 <= 32'b0;
             out3 <= 32'b0;
@@ -52,14 +52,14 @@ module Stage2(clk, rst, sigI, data1, data2, data3, data4, data5, data6, sigO, ou
       end
    endmodule
 
-   module Stage3(clk, rst, sigI, data1, data2, data3, data4, data5, sigO, out1, out2, out3, out4, out5);
+   module Stage3(clk, rst, sigI, data2, data3, data4, data5, sigO, out2, out3, out4, out5);
    input clk, rst, data2;
-   input[3:0] sigI;
+   input[4:0] sigI;
    input[15:0] data1;
    input[31:0] data3, data4;
    input[4:0] data5;
 
-   output reg[3:0] sigO;
+   output reg[4:0] sigO;
    output reg out2;
    output reg[15:0] out1;
    output reg[31:0] out3, out4;
@@ -67,7 +67,7 @@ module Stage2(clk, rst, sigI, data1, data2, data3, data4, data5, data6, sigO, ou
 
    always@(posedge clk, posedge rst) begin
       if(rst) begin
-         sigO <= 4'b0;
+         sigO <= 5'b0;
          out1 <= 16'b0;
          out2 <= 1'b0;
          out3 <= 32'b0;
