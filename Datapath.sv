@@ -12,7 +12,7 @@ module Main(clk, rst, instMemory, regMem);
    wire[15:0] PCIn, PCOut, PlussedPC, SPlussedPC, PCSrc1, SPCSrc1, S2PlussedPC;
    wire[31:0] InstMemOut, SInstMemOut, regDataIn, regDataOut1, regDataOut2, extAdr, SregDataOut1, SregDataOut2, SextAdr;
    wire[31:0] aluSrcB, aluOut, ShiftedExtAdr, SaluOut, S2regDataOut2, dataMemOut;
-   wire[4:0] Sreg1, Sreg2, regDst, SregDst, S2regDst;
+   wire[4:0] Sreg1, Sreg2, Sreg3, regDst, SregDst, S2regDst;
 
    PC pc(clk, rst, PCIn, PCOut);
    assign InstMemOut = instMemory[PCOut];
@@ -28,14 +28,18 @@ module Main(clk, rst, instMemory, regMem);
    
    ControllerUnit cu(zero, InstMemOut[31:26], sigT[9:7], sigT[6], sigT[5], sigT[4], sigT[3], sigT[2], sigT[1], sigT[0]);
 
-   Stage2 stage2(clk, rst, sigT, SPlussedPC, regDataOut1, regDataOut2, extAdr, SInstMemOut[20:16], SInstMemOut[15:11],
-                     SsigT, S2PlussedPC, SregDataOut1, SregDataOut2, SextAdr, Sreg1, Sreg2);
+   Stage2 stage2(clk, rst, sigT, SPlussedPC, regDataOut1, regDataOut2, extAdr, SInstMemOut[20:16], SInstMemOut[15:11], SInstMemOut[25:21],
+                     SsigT, S2PlussedPC, SregDataOut1, SregDataOut2, SextAdr, Sreg1, Sreg2, Sreg3);
 
    assign aluSrcB = SsigT[5] ? SextAdr : SregDataOut2;
    // assign ShiftedSExtAdr = SextAdr << 2;
    ALU alu(SsigT[9:7], SregDataOut1, aluSrcB, aluOut, zero);
    // assign PCSrc1 = S2PlussedPC + ShiftedSextAdr;
    assign regDst = SsigT[6] ? Sreg2 : Sreg1;
+
+
+   Forwarding forward(Sreg3, Sreg1, ex_mem_regWrite, ex_mem_rd, mem_wb_regWrite, mem_wb_rd, fwA, fwB); 
+
 
    Stage3 stage3(clk, rst, SsigT[4:0], zero, aluOut, SregDataOut2, regDst,
                      S2sigT, Szero, SaluOut, S2regDataOut2, SregDst);
