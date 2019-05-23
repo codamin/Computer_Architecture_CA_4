@@ -1,7 +1,7 @@
 `timescale 1ns/1ns
 
-module Stage1(clk, rst, PcPIn, InstIn, PcPOut, InstOut);
-   input clk, rst;
+module Stage1(clk, rst,flush, load, PcPIn, InstIn, PcPOut, InstOut);
+   input clk, rst, flush, load;
    input[15:0] PcPIn;
    input[31:0] InstIn;
    output reg[15:0] PcPOut;
@@ -12,9 +12,16 @@ module Stage1(clk, rst, PcPIn, InstIn, PcPOut, InstOut);
          PcPOut <= 16'b0;
          InstOut <= 16'b0;
       end
-      else begin
+      else if(flush) begin
+         PcPOut <= 16'b0;
+         InstOut <= 16'b0;
+      else if(load) begin
          PcPOut <= PcPIn;
          InstOut <= InstIn;
+      end
+      else begin
+         PcPOut <= PcPOut;
+         InstOut <= InstOut;
       end
    end
 endmodule
@@ -41,14 +48,13 @@ module Stage2(clk, rst, sigI, data1, data2, data3, data4, data5, data6, data7, s
             out6 <= 5'b0;
          end
          else begin
-            sigO <= sigI;
-            out1 <= data1;
-            out2 <= data2;
-            out3 <= data3;
-            out4 <= data4;
-            out5 <= data5;
-            out6 <= data6;
-         end 
+            sigO <= sigO;
+            out1 <= out1;
+            out2 <= out2;
+            out3 <= out3;
+            out4 <= out4;
+            out5 <= out5;
+            out6 <= out6;
       end
    endmodule
 
