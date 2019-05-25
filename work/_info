@@ -11,7 +11,7 @@ Z4 V>bJo]_N0PoQ:fCi>>;i[^2
 Z5 !s105 ALU_sv_unit
 S1
 Z6 dC:\code\Computer_Architecture_CA_4
-Z7 w1558600950
+Z7 w1558623276
 Z8 8C:/code/Computer_Architecture_CA_4/ALU.sv
 Z9 FC:/code/Computer_Architecture_CA_4/ALU.sv
 L0 2
@@ -21,284 +21,353 @@ r1
 Z11 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/ALU.sv|
 Z12 o-work work -sv -O0
 Z13 n@a@l@u
-Z14 !s108 1558613875.371000
+Z14 !s108 1558776978.145000
 Z15 !s107 C:/code/Computer_Architecture_CA_4/ALU.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vBranchPrediction
+R1
+Z16 !s100 oG4U<7P[5IjaVoid9bafK2
+Z17 IX<_XnUKdPHPl9zPOWO[bo3
+Z18 VeNcDZY1Q_NPWCPe40Ym1S1
+Z19 !s105 BranchPrediction_sv_unit
+S1
+R6
+Z20 w1558746779
+Z21 8C:/code/Computer_Architecture_CA_4/BranchPrediction.sv
+Z22 FC:/code/Computer_Architecture_CA_4/BranchPrediction.sv
+L0 2
+R10
+r1
+31
+Z23 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/BranchPrediction.sv|
+R12
+Z24 n@branch@prediction
+Z25 !s108 1558776978.283000
+Z26 !s107 C:/code/Computer_Architecture_CA_4/BranchPrediction.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vControllerUnit
 R1
-Z16 !s100 c6?BnWPJ5TCW3^jE8D>Xm3
-Z17 I0IIYgdA_ZKRZ8L3?C`<GM1
-Z18 V3HDUPl?Y0_5OPfWVMBM]J0
-Z19 !s105 Controller_sv_unit
+Z27 !s100 fmI2lPfjebRAdQizfOS8d2
+Z28 IM?@Y_3[]HBKz_bEkjW<BE0
+Z29 VPQN6R6O:1Hi=NYH<^34lD0
+Z30 !s105 Controller_sv_unit
 S1
 R6
-Z20 w1558613098
-Z21 8C:/code/Computer_Architecture_CA_4/Controller.sv
-Z22 FC:/code/Computer_Architecture_CA_4/Controller.sv
+Z31 w1558744862
+Z32 8C:/code/Computer_Architecture_CA_4/Controller.sv
+Z33 FC:/code/Computer_Architecture_CA_4/Controller.sv
 L0 1
 R10
 r1
 31
-Z23 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Controller.sv|
+Z34 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Controller.sv|
 R12
-Z24 n@controller@unit
-Z25 !s108 1558613875.105000
-Z26 !s107 C:/code/Computer_Architecture_CA_4/Controller.sv|
+Z35 n@controller@unit
+Z36 !s108 1558776978.415000
+Z37 !s107 C:/code/Computer_Architecture_CA_4/Controller.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vDataMemory
 R1
-Z27 !s100 ZP0WlIJk^;2W4ddZC1o;k2
-Z28 IW=:c:cOSUOR[:eRfUUihz3
-Z29 Vh8h7bINkAg^AM7gKL1LdH2
-Z30 !s105 DataMemory_sv_unit
+Z38 !s100 ZP0WlIJk^;2W4ddZC1o;k2
+Z39 IW=:c:cOSUOR[:eRfUUihz3
+Z40 Vh8h7bINkAg^AM7gKL1LdH2
+Z41 !s105 DataMemory_sv_unit
 S1
 R6
-Z31 w1558613211
-Z32 8C:/code/Computer_Architecture_CA_4/DataMemory.sv
-Z33 FC:/code/Computer_Architecture_CA_4/DataMemory.sv
+R7
+Z42 8C:/code/Computer_Architecture_CA_4/DataMemory.sv
+Z43 FC:/code/Computer_Architecture_CA_4/DataMemory.sv
 L0 3
 R10
 r1
 31
-Z34 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/DataMemory.sv|
+Z44 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/DataMemory.sv|
 R12
-Z35 n@data@memory
-Z36 !s108 1558613875.518000
-Z37 !s107 C:/code/Computer_Architecture_CA_4/DataMemory.sv|
+Z45 n@data@memory
+Z46 !s108 1558776978.578000
+Z47 !s107 C:/code/Computer_Architecture_CA_4/DataMemory.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vDatapath
 R1
-Z38 INd>Kha[Fo22XeeVlbL=1g2
-Z39 VY@zWT4@:1^9PhV_RecZ2k1
-Z40 !s105 Datapath_sv_unit
+Z48 INd>Kha[Fo22XeeVlbL=1g2
+Z49 VY@zWT4@:1^9PhV_RecZ2k1
+Z50 !s105 Datapath_sv_unit
 S1
 R6
-Z41 w1558555700
-Z42 8C:/code/Computer_Architecture_CA_4/Datapath.sv
-Z43 FC:/code/Computer_Architecture_CA_4/Datapath.sv
+Z51 w1558555700
+Z52 8C:/code/Computer_Architecture_CA_4/Datapath.sv
+Z53 FC:/code/Computer_Architecture_CA_4/Datapath.sv
 L0 3
 R10
 r1
 31
-Z44 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Datapath.sv|
+Z54 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Datapath.sv|
 R12
-Z45 n@datapath
-Z46 !s100 EF`0C;]nADJm6EC=a[mL52
-Z47 !s108 1558555767.438000
-Z48 !s107 C:/code/Computer_Architecture_CA_4/Datapath.sv|
+Z55 n@datapath
+Z56 !s100 EF`0C;]nADJm6EC=a[mL52
+Z57 !s108 1558555767.438000
+Z58 !s107 C:/code/Computer_Architecture_CA_4/Datapath.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vExtend1632
 R1
-Z49 !s100 DTeEL=jn]0CRhWGUN[Y6M0
-Z50 I7IOhY@`3=lfED7a6zES@H2
-Z51 Vg;?@LJZj?2zneK24<nI0X0
-Z52 !s105 Extend_sv_unit
+Z59 !s100 DTeEL=jn]0CRhWGUN[Y6M0
+Z60 I7IOhY@`3=lfED7a6zES@H2
+Z61 Vg;?@LJZj?2zneK24<nI0X0
+Z62 !s105 Extend_sv_unit
 S1
 R6
-Z53 w1558595807
-Z54 8C:/code/Computer_Architecture_CA_4/Extend.sv
-Z55 FC:/code/Computer_Architecture_CA_4/Extend.sv
+R7
+Z63 8C:/code/Computer_Architecture_CA_4/Extend.sv
+Z64 FC:/code/Computer_Architecture_CA_4/Extend.sv
 L0 3
 R10
 r1
 31
-Z56 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Extend.sv|
+Z65 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Extend.sv|
 R12
-Z57 n@extend1632
-Z58 !s108 1558613875.621000
-Z59 !s107 C:/code/Computer_Architecture_CA_4/Extend.sv|
+Z66 n@extend1632
+Z67 !s108 1558776978.870000
+Z68 !s107 C:/code/Computer_Architecture_CA_4/Extend.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vForwardingUnit
+R1
+Z69 !s100 [oN`zP4G<@]Il>`<L9<g@2
+Z70 Id`keZEiS6BR>RXbJB4SBP0
+Z71 V=da1Jb<BX@fQHQ<<E:gPg3
+Z72 !s105 ForwardingUnit_sv_unit
+S1
+R6
+Z73 w1558765196
+Z74 8C:/code/Computer_Architecture_CA_4/ForwardingUnit.sv
+Z75 FC:/code/Computer_Architecture_CA_4/ForwardingUnit.sv
+L0 1
+R10
+r1
+31
+Z76 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/ForwardingUnit.sv|
+R12
+Z77 n@forwarding@unit
+Z78 !s108 1558776979.003000
+Z79 !s107 C:/code/Computer_Architecture_CA_4/ForwardingUnit.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vHazard
+R1
+Z80 !s100 aJbHejW;DijLTdg^3<VJl1
+Z81 IjhOZQG`c]=G_[imVBO2E^2
+Z82 V]8H3FEUf9bH=3i0I@]1i?1
+Z83 !s105 Hazard_sv_unit
+S1
+R6
+Z84 w1558766637
+Z85 8C:/code/Computer_Architecture_CA_4/Hazard.sv
+Z86 FC:/code/Computer_Architecture_CA_4/Hazard.sv
+L0 2
+R10
+r1
+31
+Z87 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Hazard.sv|
+R12
+Z88 n@hazard
+Z89 !s108 1558776979.110000
+Z90 !s107 C:/code/Computer_Architecture_CA_4/Hazard.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vMain
 R1
-Z60 !s100 W5F[^Gd=G_C@]Lf]6=VgL2
-Z61 IWQV6?zhQBH22:5A5JRfJR2
-Z62 V?M;OJjCZ78179UPgZMJ[=3
-R40
+Z91 !s100 ]G>?YB9dPUR[MHcKQH[CD0
+Z92 I0Z3njUKbHR8Sl0]UiHA`51
+Z93 V?M;OJjCZ78179UPgZMJ[=3
+R50
 S1
 R6
-Z63 w1558613761
-R42
-R43
+Z94 w1558766666
+R52
+R53
 L0 3
 R10
 r1
 31
-R44
+R54
 R12
-Z64 n@main
-Z65 !s108 1558613875.228000
-R48
+Z95 n@main
+Z96 !s108 1558776978.729000
+R58
 !i10b 1
 !s85 0
 !s101 -O0
 vPC
 R1
-Z66 !s100 Cb?J7ZF?OG;_BKIO[dQMc3
-Z67 I8b]@9CM0gCXOaK15f[MVD0
-Z68 Vd^TQQQT>5i7[Ld2H`07=l2
-Z69 !s105 ProgramCounter_sv_unit
+Z97 !s100 P71<=@oS=n=mLE`5S>kfX3
+Z98 IN5]6C^7aZIcD3D?YBJR251
+Z99 Vz9VCiP_f@jnTH6kzXkRQi3
+Z100 !s105 ProgramCounter_sv_unit
 S1
 R6
-Z70 w1558560987
-Z71 8C:/code/Computer_Architecture_CA_4/ProgramCounter.sv
-Z72 FC:/code/Computer_Architecture_CA_4/ProgramCounter.sv
+Z101 w1558623940
+Z102 8C:/code/Computer_Architecture_CA_4/ProgramCounter.sv
+Z103 FC:/code/Computer_Architecture_CA_4/ProgramCounter.sv
 L0 2
 R10
 r1
 31
-Z73 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/ProgramCounter.sv|
+Z104 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/ProgramCounter.sv|
 R12
 n@p@c
-Z74 !s108 1558613875.771000
-Z75 !s107 C:/code/Computer_Architecture_CA_4/ProgramCounter.sv|
+Z105 !s108 1558776979.216000
+Z106 !s107 C:/code/Computer_Architecture_CA_4/ProgramCounter.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vRegisterFile
 R1
-Z76 !s100 6@I^Vziok3Rg4@51Yz7XS0
-Z77 IeeRAoL=Fd[FY23`WMhDol3
-Z78 Vd`KX8>l@kz[i`d9lG2hco1
-Z79 !s105 RegisterFile_sv_unit
+Z107 !s100 6@I^Vziok3Rg4@51Yz7XS0
+Z108 IeeRAoL=Fd[FY23`WMhDol3
+Z109 Vd`KX8>l@kz[i`d9lG2hco1
+Z110 !s105 RegisterFile_sv_unit
 S1
 R6
-Z80 w1558594812
-Z81 8C:/code/Computer_Architecture_CA_4/RegisterFile.sv
-Z82 FC:/code/Computer_Architecture_CA_4/RegisterFile.sv
+R7
+Z111 8C:/code/Computer_Architecture_CA_4/RegisterFile.sv
+Z112 FC:/code/Computer_Architecture_CA_4/RegisterFile.sv
 L0 3
 R10
 r1
 31
-Z83 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/RegisterFile.sv|
+Z113 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/RegisterFile.sv|
 R12
-Z84 n@register@file
-Z85 !s108 1558613875.853000
-Z86 !s107 C:/code/Computer_Architecture_CA_4/RegisterFile.sv|
+Z114 n@register@file
+Z115 !s108 1558776979.320000
+Z116 !s107 C:/code/Computer_Architecture_CA_4/RegisterFile.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vStage1
 R1
-Z87 !s100 SmW=iBPEg;3[30DbVD5ij0
-Z88 IhBPGD4f9@V<_FRoYELa8g0
-Z89 VngiYY9<n;XjLC:m@OfhkI1
-Z90 !s105 Sateges_sv_unit
+Z117 !s100 3Pok=:?BLDg?b=0UQiU=c1
+Z118 I;88FIC8;5_lNnJ]ViKIkV3
+Z119 VzclIOP90og]HS:4WClc?H2
+Z120 !s105 Sateges_sv_unit
 S1
 R6
-Z91 w1558613858
-Z92 8C:/code/Computer_Architecture_CA_4/Sateges.sv
-Z93 FC:/code/Computer_Architecture_CA_4/Sateges.sv
+Z121 w1558767113
+Z122 8C:/code/Computer_Architecture_CA_4/Sateges.sv
+Z123 FC:/code/Computer_Architecture_CA_4/Sateges.sv
 L0 3
 R10
 r1
 31
-Z94 !s108 1558613875.999000
-Z95 !s107 C:/code/Computer_Architecture_CA_4/Sateges.sv|
-Z96 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Sateges.sv|
+Z124 !s108 1558776979.430000
+Z125 !s107 C:/code/Computer_Architecture_CA_4/Sateges.sv|
+Z126 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Sateges.sv|
 R12
-Z97 n@stage1
+Z127 n@stage1
 !i10b 1
 !s85 0
 !s101 -O0
 vStage2
 R1
-Z98 !s100 o6^3^k^A69U@5_LR3PJ]P3
-Z99 ICQ5ZS04hXF<k?NJ[YnX6G1
-Z100 V]LYDI[g0C@LGGhOWCNW]B0
-R90
+Z128 !s100 `>adnoTWkF1=V4L4[Z>XZ3
+Z129 I0V]jdT9Hh9BfHmoS29ljT3
+Z130 V?TQFdCcWYcPaZgLhiMZlK1
+R120
 S1
 R6
-R91
-R92
-R93
-L0 22
+R121
+R122
+R123
+L0 30
 R10
 r1
 31
-R94
-R95
-R96
+R124
+R125
+R126
 R12
-Z101 n@stage2
+Z131 n@stage2
 !i10b 1
 !s85 0
 !s101 -O0
 vStage3
 R1
-Z102 !s100 NV4Y>QMbVX44OHhOzT_1T0
-Z103 IALS76^BXBD@o[^ol4YIEH1
-Z104 VPUdOREJ1:VdGm[oC0EzeA1
-R90
+Z132 !s100 ^L2oKbAzn0X4Age06AH@J2
+Z133 I:6hLU@TBUzd]0UnAeH:eg2
+Z134 VEloAL`l[[=:od`L=OUHUg3
+R120
 S1
 R6
-R91
-R92
-R93
-L0 55
+R121
+R122
+R123
+L0 65
 R10
 r1
 31
-R94
-R95
-R96
+R124
+R125
+R126
 R12
-Z105 n@stage3
+Z135 n@stage3
 !i10b 1
 !s85 0
 !s101 -O0
 vStage4
 R1
-Z106 !s100 g]SLQRW9Y;ocNYMeYRBLf2
-Z107 IaB4:KN`@haRZ>dFi4N0cG1
-Z108 VlI5z6`9J6F<8c>nFJO72Q3
-R90
+Z136 !s100 ``>Xg8>Y[6Nl8aADJo>S:3
+Z137 I]M8dX9ZLY<RA]UW@:;Oej2
+Z138 VlI5z6`9J6F<8c>nFJO72Q3
+R120
 S1
 R6
-R91
-R92
-R93
-L0 88
+R121
+R122
+R123
+L0 94
 R10
 r1
 31
-R94
-R95
-R96
+R124
+R125
+R126
 R12
-Z109 n@stage4
+Z139 n@stage4
 !i10b 1
 !s85 0
 !s101 -O0
 vTestBench
 R1
 !i10b 1
-Z110 !s100 3ejzBTbIk:hdUJe9a7=Sd0
-Z111 I91J=kPRnc:MA7c<B>>=nW1
-Z112 VH;VS]59WmQ>4a<zRibM9Z0
-Z113 !s105 TestBench_sv_unit
+!s100 @n6]ad4DD:_F>D@`J[K<m1
+IT0YnKg5VenPXcOZ0ZL:iE0
+Z140 VH;VS]59WmQ>4a<zRibM9Z0
+Z141 !s105 TestBench_sv_unit
 S1
 R6
-Z114 w1558599174
-Z115 8C:/code/Computer_Architecture_CA_4/TestBench.sv
-Z116 FC:/code/Computer_Architecture_CA_4/TestBench.sv
+w1558776946
+Z142 8C:/code/Computer_Architecture_CA_4/TestBench.sv
+Z143 FC:/code/Computer_Architecture_CA_4/TestBench.sv
 L0 3
 R10
 r1
 !s85 0
 31
-!s108 1558613876.206000
+!s108 1558776979.704000
 !s107 C:/code/Computer_Architecture_CA_4/TestBench.sv|
-Z117 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/TestBench.sv|
+Z144 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/TestBench.sv|
 !s101 -O0
 R12
-Z118 n@test@bench
+Z145 n@test@bench

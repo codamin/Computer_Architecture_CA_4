@@ -2,10 +2,10 @@
 module BranchPrediction(opCode, compResult, PCSrcS, FlushS, jumpS);
    input[5:0] opCode;
    input compResult;
-   output PCSrcS, FlushS;
+   output reg PCSrcS, FlushS, jumpS;
    
    always@(opCode, compResult) begin
-      {PCSrcS, FlushS, jumpS} = 2'b111;
+      {PCSrcS, FlushS, jumpS} = 3'b000;
       if(opCode == 4 && compResult) begin
          PCSrcS = 1'b1;
          FlushS = 1'b1;

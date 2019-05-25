@@ -36,7 +36,11 @@ module ControllerUnit(zero, opcode, func, aluS, regDstS, aluSrcS, dataMemReadS, 
         {writeRegS, regDstS} = 2'b11;
         aluS = lt_;
       end
+      default: begin
+        {writeRegS, memToRegS, dataMemWriteS, aluS, aluSrcS, regDstS} = 9'b0;
+      end
       endcase
+    end
     LW: begin
       {writeRegS, aluSrcS, memToRegS, dataMemReadS} = 4'b1111;
       aluS = add_;
@@ -45,16 +49,13 @@ module ControllerUnit(zero, opcode, func, aluS, regDstS, aluSrcS, dataMemReadS, 
       {aluSrcS, dataMemWriteS} = 2'b11;
       aluS = add_;
     end
-    // JMP:
+    // // JMP:
     BEQ: begin
       aluS = sub_;
     end
     BNE: begin
       aluS = sub_;
     end
-    en
-    
-    
     default: begin
       {writeRegS, memToRegS, dataMemWriteS, aluS, aluSrcS, regDstS} = 9'b0;
     end

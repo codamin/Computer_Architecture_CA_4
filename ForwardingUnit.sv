@@ -4,11 +4,11 @@ module ForwardingUnit(id_ex_rs, id_ex_rt, ex_mem_regWrite, ex_mem_rd, mem_wb_reg
 //rd ---> destination
 input[4:0] id_ex_rs, id_ex_rt, ex_mem_rd, mem_wb_rd;
 input ex_mem_regWrite, mem_wb_regWrite;
-output reg[1:0] fwA = 0, fwB = 0;
+output reg[1:0] fwA, fwB;
 reg cond1_s = 0, cond1_t = 0, cond2_s = 0, cond2_t = 0;
 
 always@(id_ex_rs, id_ex_rt, ex_mem_regWrite, ex_mem_rd, mem_wb_regWrite, mem_wb_rd) begin
-
+    {fwA, fwB} = 4'b0000;
     cond1_s = ex_mem_regWrite && ex_mem_rd == id_ex_rs && ~ex_mem_rd;
     cond1_t = ex_mem_regWrite && ex_mem_rd == id_ex_rt && ~ex_mem_rd;
 

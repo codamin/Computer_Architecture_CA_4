@@ -1,0 +1,84 @@
+C:/code/Computer_Architecture_CA_4/Datapath.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/Datapath.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Main
+
+Top level modules:
+	Main
+
+} {} {}} C:/code/Computer_Architecture_CA_4/BranchPrediction.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/BranchPrediction.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module BranchPrediction
+
+Top level modules:
+	BranchPrediction
+
+} {} {}} C:/code/Computer_Architecture_CA_4/Extend.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/Extend.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Extend1632
+
+Top level modules:
+	Extend1632
+
+} {} {}} C:/code/Computer_Architecture_CA_4/ALU.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/ALU.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/code/Computer_Architecture_CA_4/ForwardingUnit.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/ForwardingUnit.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ForwardingUnit
+
+Top level modules:
+	ForwardingUnit
+
+} {} {}} C:/code/Computer_Architecture_CA_4/Sateges.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/Sateges.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Stage1
+-- Compiling module Stage2
+-- Compiling module Stage3
+-- Compiling module Stage4
+
+Top level modules:
+	Stage1
+	Stage2
+	Stage3
+	Stage4
+
+} {} {}} C:/code/Computer_Architecture_CA_4/Controller.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/Controller.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ControllerUnit
+
+Top level modules:
+	ControllerUnit
+
+} {} {}} C:/code/Computer_Architecture_CA_4/RegisterFile.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/RegisterFile.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} C:/code/Computer_Architecture_CA_4/ProgramCounter.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/ProgramCounter.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} C:/code/Computer_Architecture_CA_4/Hazard.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/Hazard.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module Hazard
+
+Top level modules:
+	Hazard
+
+} {} {}} C:/code/Computer_Architecture_CA_4/DataMemory.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/DataMemory.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}}
