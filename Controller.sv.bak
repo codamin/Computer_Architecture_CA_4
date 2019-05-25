@@ -48,12 +48,6 @@ module ControllerUnit(zero, opcode, func, aluS, regDstS, aluSrcS, dataMemReadS, 
       {aluSrcS, dataMemWriteS} = 2'b11;
       aluS = add_;
     end
-    BEQ: begin
-      aluS = sub_;
-    end
-    BNE: begin
-      aluS = sub_;
-    end
     default: begin
       {writeRegS, memToRegS, dataMemWriteS, aluS, aluSrcS, regDstS} = 9'b0;
     end

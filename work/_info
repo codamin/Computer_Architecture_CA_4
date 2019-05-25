@@ -21,7 +21,7 @@ r1
 Z11 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/ALU.sv|
 Z12 o-work work -sv -O0
 Z13 n@a@l@u
-Z14 !s108 1558776978.145000
+Z14 !s108 1558780088.317000
 Z15 !s107 C:/code/Computer_Architecture_CA_4/ALU.sv|
 !i10b 1
 !s85 0
@@ -44,7 +44,7 @@ r1
 Z23 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/BranchPrediction.sv|
 R12
 Z24 n@branch@prediction
-Z25 !s108 1558776978.283000
+Z25 !s108 1558780088.445000
 Z26 !s107 C:/code/Computer_Architecture_CA_4/BranchPrediction.sv|
 !i10b 1
 !s85 0
@@ -67,7 +67,7 @@ r1
 Z34 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Controller.sv|
 R12
 Z35 n@controller@unit
-Z36 !s108 1558776978.415000
+Z36 !s108 1558780088.529000
 Z37 !s107 C:/code/Computer_Architecture_CA_4/Controller.sv|
 !i10b 1
 !s85 0
@@ -90,7 +90,7 @@ r1
 Z44 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/DataMemory.sv|
 R12
 Z45 n@data@memory
-Z46 !s108 1558776978.578000
+Z46 !s108 1558780088.637000
 Z47 !s107 C:/code/Computer_Architecture_CA_4/DataMemory.sv|
 !i10b 1
 !s85 0
@@ -136,7 +136,7 @@ r1
 Z65 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Extend.sv|
 R12
 Z66 n@extend1632
-Z67 !s108 1558776978.870000
+Z67 !s108 1558780088.838000
 Z68 !s107 C:/code/Computer_Architecture_CA_4/Extend.sv|
 !i10b 1
 !s85 0
@@ -159,7 +159,7 @@ r1
 Z76 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/ForwardingUnit.sv|
 R12
 Z77 n@forwarding@unit
-Z78 !s108 1558776979.003000
+Z78 !s108 1558780088.919000
 Z79 !s107 C:/code/Computer_Architecture_CA_4/ForwardingUnit.sv|
 !i10b 1
 !s85 0
@@ -182,20 +182,20 @@ r1
 Z87 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Hazard.sv|
 R12
 Z88 n@hazard
-Z89 !s108 1558776979.110000
+Z89 !s108 1558780089.008000
 Z90 !s107 C:/code/Computer_Architecture_CA_4/Hazard.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vMain
 R1
-Z91 !s100 ]G>?YB9dPUR[MHcKQH[CD0
-Z92 I0Z3njUKbHR8Sl0]UiHA`51
+Z91 !s100 K7fK^^V0ZRn:WzUSSc`<Z3
+Z92 IRBhCG8G_EWM76<G9zZhDM3
 Z93 V?M;OJjCZ78179UPgZMJ[=3
 R50
 S1
 R6
-Z94 w1558766666
+Z94 w1558779790
 R52
 R53
 L0 3
@@ -205,7 +205,7 @@ r1
 R54
 R12
 Z95 n@main
-Z96 !s108 1558776978.729000
+Z96 !s108 1558780088.741000
 R58
 !i10b 1
 !s85 0
@@ -228,7 +228,7 @@ r1
 Z104 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/ProgramCounter.sv|
 R12
 n@p@c
-Z105 !s108 1558776979.216000
+Z105 !s108 1558780089.115000
 Z106 !s107 C:/code/Computer_Architecture_CA_4/ProgramCounter.sv|
 !i10b 1
 !s85 0
@@ -251,7 +251,7 @@ r1
 Z113 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/RegisterFile.sv|
 R12
 Z114 n@register@file
-Z115 !s108 1558776979.320000
+Z115 !s108 1558780089.204000
 Z116 !s107 C:/code/Computer_Architecture_CA_4/RegisterFile.sv|
 !i10b 1
 !s85 0
@@ -271,7 +271,7 @@ L0 3
 R10
 r1
 31
-Z124 !s108 1558776979.430000
+Z124 !s108 1558780089.290000
 Z125 !s107 C:/code/Computer_Architecture_CA_4/Sateges.sv|
 Z126 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/Sateges.sv|
 R12
@@ -351,13 +351,13 @@ Z139 n@stage4
 vTestBench
 R1
 !i10b 1
-!s100 @n6]ad4DD:_F>D@`J[K<m1
-IT0YnKg5VenPXcOZ0ZL:iE0
+!s100 _c2khI3naMkB7PW?;NnNh2
+I[ReUPd1H@7<QdgYjZHY7[2
 Z140 VH;VS]59WmQ>4a<zRibM9Z0
 Z141 !s105 TestBench_sv_unit
 S1
 R6
-w1558776946
+w1558780069
 Z142 8C:/code/Computer_Architecture_CA_4/TestBench.sv
 Z143 FC:/code/Computer_Architecture_CA_4/TestBench.sv
 L0 3
@@ -365,7 +365,7 @@ R10
 r1
 !s85 0
 31
-!s108 1558776979.704000
+!s108 1558780089.592000
 !s107 C:/code/Computer_Architecture_CA_4/TestBench.sv|
 Z144 !s90 -reportprogress|300|-work|work|-sv|C:/code/Computer_Architecture_CA_4/TestBench.sv|
 !s101 -O0

@@ -46,19 +46,19 @@ Top level modules:
 	Stage3
 	Stage4
 
-} {} {}} C:/code/Computer_Architecture_CA_4/Controller.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/Controller.sv
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module ControllerUnit
-
-Top level modules:
-	ControllerUnit
-
 } {} {}} C:/code/Computer_Architecture_CA_4/RegisterFile.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/RegisterFile.sv
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module RegisterFile
 
 Top level modules:
 	RegisterFile
+
+} {} {}} C:/code/Computer_Architecture_CA_4/TestBench.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/TestBench.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module TestBench
+
+Top level modules:
+	TestBench
 
 } {} {}} C:/code/Computer_Architecture_CA_4/ProgramCounter.sv {1 {vlog -work work -sv C:/code/Computer_Architecture_CA_4/ProgramCounter.sv
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012

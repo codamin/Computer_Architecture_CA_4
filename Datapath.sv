@@ -9,23 +9,23 @@ module Main(clk, rst, instMemory, regMem);
    wire[4:0] S2sigT;
    wire[1:0] S3sigT, frwrdASel, frwrdBSel;
 
-   wire[15:0] PCIn, PCOut, PlussedPC, SPlussedPC, PCSrc1, SPCSrc1, S2PlussedPC;
+   wire[15:0] PCIn, PCOut, PlussedPC, SPlussedPC, PCSrc1, SPCSrc1, S2PlussedPC, PrePCIn;
    wire[31:0] InstMemOut, SInstMemOut, regDataIn, regDataOut1, regDataOut2, extAdr, SregDataOut1, SregDataOut2, SextAdr;
-   wire[31:0] aluSrcA, aluSrcB, aluOut, ShiftedExtAdr, SaluOut, S2regDataOut2, dataMemOut, S2aluOut, aluSrcBb;
+   wire[31:0] aluSrcA, aluSrcB, aluOut, SaluOut, S2regDataOut2, dataMemOut, S2aluOut, aluSrcBb;
    wire[4:0] Sreg1, Sreg2, Sreg3, regDst, SregDst, S2regDst;
 
    PC pc(clk, rst, PCWrite, PCIn, PCOut);
    assign InstMemOut = instMemory[PCOut];
    assign PlussedPC = PCOut + 1;
-   assign PCIn = PCSrcS ? PCSrc1 : PlussedPC;
+   assign PrePCIn = PCSrcS ? PCSrc1 : PlussedPC;
+   assign PCIn = jumpS ? extAdr : PrePCIn;
 
    Stage1 stage1(clk, rst, FlushS, IFIDWrite, PlussedPC, InstMemOut, SPlussedPC, SInstMemOut);
 
    RegisterFile regFile(clk, rst, regMem, S3sigT[1], SInstMemOut[25:21], SInstMemOut[20:16], S2regDst, regDataIn, regDataOut1, regDataOut2);
    assign CompBranchPrediction = (regDataOut1 == regDataOut2);
    Extend1632 extAddress(SInstMemOut[15:0], extAdr);
-   assign ShiftedExtAdr = extAdr << 2;
-   assign PCSrc1 = SPlussedPC + ShiftedExtAdr;
+   assign PCSrc1 = SPlussedPC + extAdr;
    Hazard hazard(SsigT[3], Sreg2, SInstMemOut[25:21], SInstMemOut[20:16], PCWrite, IFIDWrite, normalS);
    assign sigTFinal = normalS ? sigT : 9'b0;
    
