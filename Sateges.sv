@@ -27,6 +27,8 @@ module Stage1(clk, rst,flush, load, PcPIn, InstIn, PcPOut, InstOut);
    end
 endmodule
 
+
+
 module Stage2(clk, rst, sigI, data1, data2, data3, data4, data5, data6, data7, sigO, out1, out2, out3, out4, out5, out6, out7);
    input clk, rst;
    input[8:0] sigI;

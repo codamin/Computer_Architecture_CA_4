@@ -16,18 +16,18 @@ always@(id_ex_rs, id_ex_rt, ex_mem_regWrite, ex_mem_rd, mem_wb_regWrite, mem_wb_
     cond2_t = mem_wb_regWrite && mem_wb_rd == id_ex_rt && ~mem_wb_rd;
 
     if(cond1_s) begin
-        fwA = 2'b10;
+        fwA = 2'b01;
     end
     if(cond1_t) begin
-        fwB = 2'b10;
+        fwB = 2'b01;
     end
 
     if(~cond1_s && cond2_s) begin
-        fwA = 2'b01;
+        fwA = 2'b10;
     end
 
     if(~cond1_t && cond2_t) begin
-        fwB = 2'b01;
+        fwB = 2'b10;
     end
 end
 endmodule
