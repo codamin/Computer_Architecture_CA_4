@@ -50,10 +50,6 @@ module Main(clk, rst, instMemory, regMem);
 
    ForwardingUnit forwarding(Sreg1, Sreg2, S2sigT[1], SregDst, S3sigT[1], S2regDst, frwrdASel, frwrdBSel);
 
-
-//    assign aluSrcBb = (frwrdBSel == 2'b00) ? SextAdr : (frwrdBSel == 2'b01) ? SaluOut : regDataIn;
-
-//    assign aluSrcB = SsigT[4] ? aluSrcBb : SregDataOut2;
    assign aluSrcBb = (frwrdBSel == 2'b00) ? SregDataOut2 : (frwrdBSel == 2'b01) ? SaluOut : regDataIn;
 
    assign aluSrcB = SsigT[4] ? SextAdr : aluSrcBb;
