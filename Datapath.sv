@@ -7,7 +7,7 @@ module Main(clk, rst, instMemory, regMem);
    wire zero, Szero, PCWrite, IFIDWrite, normalS, PCSrcS, FlushS,
     CompBranchPrediction, jumpS;
    wire[8:0] sigT, SsigT, sigTFinal;
-   wire[4:0] S2sigT;
+   wire[3:0] S2sigT;
    wire[1:0] S3sigT, frwrdASel, frwrdBSel;
 
    wire[15:0] PCIn, PCOut, PlussedPC, SPlussedPC, PCSrc1, SPCSrc1, S2PlussedPC, PrePCIn;
