@@ -13,7 +13,7 @@ module Main(clk, rst, instMemory, regMem);
    wire[15:0] PCIn, PCOut, PlussedPC, SPlussedPC, PCSrc1, SPCSrc1, S2PlussedPC, PrePCIn;
    wire[31:0] InstMemOut, SInstMemOut, regDataIn, regDataOut1, regDataOut2,
     extAdr, SregDataOut1, SregDataOut2, SextAdr;
-   wire[31:0] aluSrcA, aluSrcB, aluOut, SaluOut, S2regDataOut2, dataMemOut,
+   wire[31:0] aluSrcA, aluSrcB, aluOut, SaluOut, S2regDataOut2, dataMemOut, SdataMemOut,
     S2aluOut, aluSrcBb;
    wire[4:0] Sreg1, Sreg2, Sreg3, regDst, SregDst, S2regDst;
 
@@ -27,7 +27,7 @@ module Main(clk, rst, instMemory, regMem);
     SPlussedPC, SInstMemOut);
 
    RegisterFile regFile(clk, rst, regMem, S3sigT[1], SInstMemOut[25:21],
-    SInstMemOut[20:16], S2regDst, regDataIn, regDataOut1, regDataOut2);
+                           SInstMemOut[20:16], S2regDst, regDataIn, regDataOut1, regDataOut2);
    assign CompBranchPrediction = (regDataOut1 == regDataOut2);
    Extend1632 extAddress(SInstMemOut[15:0], extAdr);
    assign PCSrc1 = SPlussedPC + extAdr;
@@ -46,8 +46,6 @@ module Main(clk, rst, instMemory, regMem);
                      SsigT, S2PlussedPC, SregDataOut1, SregDataOut2, SextAdr,
                       Sreg1, Sreg2, Sreg3);
    
-
-
    ForwardingUnit forwarding(Sreg1, Sreg2, S2sigT[1], SregDst, S3sigT[1], S2regDst, frwrdASel, frwrdBSel);
 
    assign aluSrcBb = (frwrdBSel == 2'b00) ? SregDataOut2 : (frwrdBSel == 2'b01) ? SaluOut : regDataIn;
