@@ -12,7 +12,7 @@ module RegisterFile(clk, rst,regMem, writeS, address1, address2, address3, write
    assign data1 = memory[address1];
    assign data2 = memory[address2];
    integer i;
-   always@(posedge clk, posedge rst) begin
+   always@(negedge clk, posedge rst) begin
       if(rst) begin
          for(i=0; i<32; i=i+1) memory[i] <= regMem[i];
       end
