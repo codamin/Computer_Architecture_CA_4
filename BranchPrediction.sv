@@ -16,6 +16,7 @@ module BranchPrediction(opCode, compResult, PCSrcS, FlushS, jumpS);
       end
       else if(opCode == 2) begin
          jumpS = 1'b1;
+         FlushS = 1'b1;
       end
    end
 endmodule

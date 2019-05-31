@@ -9,11 +9,11 @@ reg cond1_s = 0, cond1_t = 0, cond2_s = 0, cond2_t = 0;
 
 always@(id_ex_rs, id_ex_rt, ex_mem_regWrite, ex_mem_rd, mem_wb_regWrite, mem_wb_rd) begin
     {fwA, fwB} = 4'b0000;
-    cond1_s = ex_mem_regWrite && ex_mem_rd == id_ex_rs && ~ex_mem_rd;
-    cond1_t = ex_mem_regWrite && ex_mem_rd == id_ex_rt && ~ex_mem_rd;
+    cond1_s = ex_mem_regWrite && ex_mem_rd == id_ex_rs && ex_mem_rd != 5'b00000;
+    cond1_t = ex_mem_regWrite && ex_mem_rd == id_ex_rt && ex_mem_rd != 5'b00000;
 
-    cond2_s = mem_wb_regWrite && mem_wb_rd == id_ex_rs && ~mem_wb_rd;
-    cond2_t = mem_wb_regWrite && mem_wb_rd == id_ex_rt && ~mem_wb_rd;
+    cond2_s = mem_wb_regWrite && mem_wb_rd == id_ex_rs && mem_wb_rd != 5'b00000;
+    cond2_t = mem_wb_regWrite && mem_wb_rd == id_ex_rt && mem_wb_rd != 5'b00000;
 
     if(cond1_s) begin
         fwA = 2'b01;
