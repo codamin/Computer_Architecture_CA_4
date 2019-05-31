@@ -16,6 +16,6 @@ module RegisterFile(clk, rst,regMem, writeS, address1, address2, address3, write
       if(rst) begin
          for(i=0; i<32; i=i+1) memory[i] <= regMem[i];
       end
-      else if(writeS) memory[address3] <= writeData;
+      else if(writeS && ~address3) memory[address3] <= writeData;
    end
 endmodule
